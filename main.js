@@ -274,6 +274,18 @@ if (window.location.pathname.includes('product.html')) {
 
 // Mobile Hamburger Menu
 document.addEventListener('DOMContentLoaded', () => {
+  // Move search bar to nav-links on mobile
+  if (window.innerWidth <= 768) {
+    const searchBar = document.querySelector('.header-actions .search-bar');
+    const navLinks = document.querySelector('.nav-links');
+    if (searchBar && navLinks) {
+      navLinks.insertBefore(searchBar, navLinks.firstChild);
+      searchBar.style.display = 'flex';
+      searchBar.style.width = 'auto';
+      searchBar.style.margin = '1rem';
+    }
+  }
+
   const hamburgerIcons = document.querySelectorAll('.hamburger-icon');
   hamburgerIcons.forEach(hamburger => {
     hamburger.addEventListener('click', () => {
