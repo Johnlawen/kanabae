@@ -1113,14 +1113,20 @@ footer {
     margin-left: 1rem;
   }
   .hero {
-    height: auto;
-    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
   }
   .hero-content {
-    right: 5%;
-    left: 5%;
-    max-width: none;
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    transform: none;
+    max-width: 90%;
     text-align: center;
+    margin: 0 auto;
   }
   .hero-content h1 {
     font-size: 2.5rem;

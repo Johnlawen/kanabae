@@ -1,4 +1,4 @@
-import './style.css';
+
 
 // Cart State (Persist across pages)
 let cart = JSON.parse(localStorage.getItem('alamiya_cart')) || [];
