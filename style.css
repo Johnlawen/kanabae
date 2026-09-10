@@ -1019,3 +1019,120 @@ footer {
   transform: rotate(180deg);
 }
 
+/* Responsive Design (Mobile & Tablet) */
+@media (max-width: 1024px) {
+  .features-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .categories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .categories-large-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  .nav-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .search-bar {
+    width: auto;
+    flex: 1;
+    margin-left: 1rem;
+  }
+  .hero {
+    height: auto;
+    min-height: 400px;
+  }
+  .hero-content {
+    right: 5%;
+    left: 5%;
+    max-width: none;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .features-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .categories-large-grid {
+    grid-template-columns: 1fr;
+  }
+  .products-layout {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    border-left: none;
+    border-bottom: 1px solid var(--border-color);
+    padding-left: 0;
+    padding-bottom: 1.5rem;
+  }
+  .split-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .footer-top {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: center;
+  }
+  .footer-col.footer-brand {
+    align-items: center;
+  }
+  .pdp-actions-row {
+    flex-direction: column;
+  }
+  .qty-selector {
+    width: 100%;
+  }
+  .pdp-add-to-cart, .pdp-wishlist-btn {
+    width: 100%;
+  }
+  .pdp-features {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .cart-sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .pdp-thumbnails {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .pdp-main-img-container img {
+    height: 300px;
+  }
+}
