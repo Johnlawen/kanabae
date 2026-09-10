@@ -271,3 +271,16 @@ if (window.location.pathname.includes('product.html')) {
     });
   });
 }
+
+// Mobile Hamburger Menu
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburgerIcons = document.querySelectorAll('.hamburger-icon');
+  hamburgerIcons.forEach(hamburger => {
+    hamburger.addEventListener('click', () => {
+      const navLinks = document.querySelector('.nav-links');
+      if (navLinks) {
+        navLinks.classList.toggle('active');
+      }
+    });
+  });
+});
