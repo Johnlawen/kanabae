@@ -421,9 +421,7 @@ header {
 
 /* Products Page Layout */
 .products-layout {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 3rem;
+  display: block;
   margin-top: 2rem;
 }
 .sidebar {
@@ -1069,8 +1067,7 @@ footer {
     font-size: 2.5rem;
   }
   .features-row {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    display: none;
   }
   .categories-grid {
     grid-template-columns: repeat(2, 1fr);
