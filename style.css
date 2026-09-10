@@ -1073,10 +1073,15 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .categories-large-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
   .products-layout {
-    grid-template-columns: 1fr;
+    display: block;
+  }
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
   .sidebar {
     border-left: none;
@@ -1118,13 +1123,43 @@ footer {
 
 @media (max-width: 480px) {
   .categories-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .categories-large-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .cat-large-card img {
+    height: 150px;
   }
   .hero-content h1 {
     font-size: 2rem;
   }
   .product-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .product-card {
+    padding: 0.5rem;
+  }
+  .product-img {
+    height: 120px;
+    margin-bottom: 0.5rem;
+  }
+  .product-info h3 {
+    font-size: 0.9rem;
+  }
+  .product-price {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .btn-outline {
+    padding: 0.4rem;
+    font-size: 0.85rem;
+  }
+  .category-card img {
+    height: 100px;
   }
   .pdp-thumbnails {
     grid-template-columns: repeat(4, 1fr);
