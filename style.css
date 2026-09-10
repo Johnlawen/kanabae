@@ -1116,7 +1116,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 300px;
+    margin-top: 1rem;
+  }
+  .hero img {
+    object-position: center;
   }
   .hero-content {
     position: relative;
@@ -1124,12 +1128,18 @@ footer {
     right: auto;
     left: auto;
     transform: none;
-    max-width: 90%;
+    max-width: 95%;
     text-align: center;
     margin: 0 auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 1.5rem;
+    border-radius: 12px;
   }
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
   }
   .features-row {
     display: none;
